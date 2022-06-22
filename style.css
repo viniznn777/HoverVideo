@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+.banner i:hover {
+    color: #fff;
+    background: #000;
+}
+
+.banner i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 25vw;
+    text-align: center;
+    color: #000;
+    line-height: 100vh;
+    mix-blend-mode: screen;
+    transition: all 0.7s;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+    }
+    .banner i {
+        height: 50%;
+        line-height: 50vh;
+        font-size: 50vw;
+    }
+}
